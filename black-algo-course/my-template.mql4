@@ -1,0 +1,17 @@
+//--- my-practice-script.mq4 
+//--- copyright 2021, CK Development
+//--- https://github.com/carlobisda
+
+#property copyright "Copyright 2021, CK Development"
+#property link      "https://github.com/carlobisda"
+#property version   "0.0.1"
+#property strict
+#property 
+
+// "//"" is how you comment, i just add the --- for stylization
+//--- script program start function
+void OnStart()
+    {
+//---
+
+//---

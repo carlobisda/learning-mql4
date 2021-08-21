@@ -1,0 +1,31 @@
+//--- my-practice-script.mq4 
+//--- copyright 2021, CK Development
+//--- https://github.com/carlobisda
+
+#property copyright "Copyright 2021, CK Development"
+#property link      "https://github.com/carlobisda"
+#property version   "0.0.1"
+#property strict
+#property 
+
+// "//"" is how you comment, i just add the --- for stylization
+//--- script program start function
+void OnStart()
+    {
+//---
+
+// CALCULATE AVERAGE CLOSING PRICE OF THE LAST 10 CANDLES
+
+    double resultTotal; // DOUBLE IS USED FOR MORE ACCURACY, FLOAT IS USED FOR LARGE DATA ARRAYS TO SAVE MEMORY
+    double resultAverage; // SEE ABOVE
+    int totalBar = 10; // 
+
+    for(int x = 1; x <= totalBar; x++)
+    {
+        resultTotal = resultTotal + iClose(NULL,0,x); // THIS LINE OF CODE WILL LOOP, x10, 
+    }
+
+    resultAverage = resultTotal/totalBar // 
+
+    Comment(resultAverage);
+//---
